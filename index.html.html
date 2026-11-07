@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asesorías de Química · Clases personalizadas en línea</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0d24;--card:#141a3d;--card2:#0e1330;--line:#2a3470;
+  --text:#f1f3ff;--muted:#a5b0e0;--accent:#5aa2ff;--accent2:#a66bff;--green:#39ff9c;--onaccent:#fff;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){--bg:#f1f3ff;--card:#fff;--card2:#e6eaff;--line:#ccd3f5;--text:#14194a;--muted:#4f5a8f;--accent:#2563eb;--accent2:#7c3aed;--green:#0a9a62;--onaccent:#fff}
+}
+:root[data-theme="dark"]{--bg:#0a0d24;--card:#141a3d;--card2:#0e1330;--line:#2a3470;--text:#f1f3ff;--muted:#a5b0e0;--accent:#5aa2ff;--accent2:#a66bff;--green:#39ff9c;--onaccent:#fff}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(900px 500px at 85% -10%,color-mix(in srgb,var(--accent) 16%,transparent),transparent),radial-gradient(700px 500px at 0% 30%,color-mix(in srgb,var(--accent2) 12%,transparent),transparent),radial-gradient(800px 500px at 50% 110%,color-mix(in srgb,var(--green) 12%,transparent),transparent),var(--bg);background-attachment:fixed;color:var(--text);font-family:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.55}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.18em;font-size:.8rem;text-transform:uppercase;text-align:center}
+h1,h2{text-align:center;margin:.3em 0;font-weight:800;line-height:1.1}
+h1{font-size:clamp(2.2rem,6vw,3.6rem)}
+h2{font-size:clamp(1.7rem,4.5vw,2.4rem)}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);text-align:center;max-width:600px;margin:12px auto 0}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:var(--onaccent);font-weight:800;padding:14px 28px;border-radius:999px;text-decoration:none;font-size:1.05rem}
+.center{text-align:center;margin-top:24px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.card h3{margin:0 0 6px;color:var(--accent)}
+.card p{margin:0;color:var(--muted)}
+.quote{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px;margin-top:28px}
+.chip{display:inline-block;background:var(--card2);border:1px solid var(--green);border-radius:14px;padding:10px 16px;font-size:.95rem}
+.small{color:var(--muted);font-size:.92rem}
+.dur{font-weight:600;font-size:1.15rem;margin:14px 0 8px}
+.dur b{color:var(--green)}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.inc{color:var(--accent);font-weight:800;letter-spacing:.1em;font-size:.8rem;text-transform:uppercase;margin:22px 0 10px}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags label{cursor:pointer;display:flex;gap:8px;align-items:center;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:10px 14px}.tags label small{color:var(--green);font-weight:600}.tags input{accent-color:var(--accent);width:18px;height:18px}
+.row{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);margin-top:22px;padding-top:14px}
+.total{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-weight:800}
+.total .n{font-size:clamp(2rem,7vw,3rem);color:var(--green)}
+table{width:100%;border-collapse:collapse;margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+td{padding:16px 20px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+td:last-child{text-align:right;color:var(--green);font-weight:600}
+ol{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+ol li{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+ol b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--onaccent);margin-bottom:8px}
+.pay{margin-top:18px;text-align:center;color:var(--muted)}
+.aviso{margin:20px 0 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:22px 0 36px}
+</style>
+</head>
+<body>
+
+<section style="padding-top:56px">
+<div class="wrap">
+  <div class="eyebrow">⚗️ Asesorías de Química</div>
+  <h1>Aprende química <span class="grad">a tu ritmo</span></h1>
+  <p class="lead">Clases personalizadas 100% en línea por Google Meet, con material de apoyo opcional: ejercicios de práctica, formulario y examen simulacro. También te preparo para exámenes de admisión y ETS.</p>
+  <div class="center"><a class="btn wa" href="#">Escríbeme por WhatsApp</a></div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="eyebrow">Respaldo académico</div>
+  <h2>¿Quién te va a enseñar?</h2>
+  <div class="grid">
+    <div class="card"><h3>Alumno de excelencia</h3><p>Reconocido por su desempeño en UPIICSA.</p></div>
+    <div class="card"><h3>Interpolitécnicos</h3><p>Participación en media superior en el concurso de química.</p></div>
+    <div class="card"><h3>2 años de experiencia</h3><p>Dando asesorías y ayudando a estudiantes a mejorar sus resultados.</p></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="eyebrow">Cursos personalizados</div>
+  <h2><span class="grad">$150</span> por hora</h2>
+  <p class="lead">Cada hora de clase cuesta $150. El material de apoyo es opcional y se cobra aparte. Además te preparo para exámenes de admisión y ETS.</p>
+  <div class="grid">
+    <div class="card"><h3>Ejercicios de práctica</h3><p>Material opcional (+$150) para reforzar cada tema.</p></div>
+    <div class="card"><h3>Formulario</h3><p>Material opcional (+$100) con todo a la mano.</p></div>
+    <div class="card"><h3>Examen simulacro</h3><p>Material opcional (+$100) para practicar como en el examen.</p></div>
+    <div class="card"><h3>Admisión y ETS</h3><p>Preparación para exámenes de admisión y exámenes ETS.</p></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="eyebrow">Cotizador</div>
+  <h2>Arma tu <span class="grad">propio plan</span></h2>
+  <p class="lead">Elige las horas y mira cuánto cuesta. Tómale una captura y mándamela por WhatsApp; te atiendo de forma personalizada.</p>
+  <div class="quote">
+    <span class="chip">● En línea · Google Meet</span>
+    <p class="small" style="margin:14px 0 0">Clases por Google Meet a $150 por hora.</p>
+    <div class="dur">Duración: <b id="dur">1 h 30 min</b></div>
+    <input id="rng" type="range" min="1" max="10" step="0.5" value="1.5" aria-label="Duración en horas">
+    <div class="inc">Material (opcional, se cobra aparte)</div>
+    <div class="tags">
+      <label><input type="checkbox" class="mat" value="150" data-n="Ejercicios de práctica"> Ejercicios de práctica <small>+$150</small></label>
+      <label><input type="checkbox" class="mat" value="100" data-n="Formulario"> Formulario <small>+$100</small></label>
+      <label><input type="checkbox" class="mat" value="100" data-n="Examen simulacro"> Examen simulacro <small>+$100</small></label>
+    </div>
+    <div class="row"><span id="lbl">1 h 30 min de clase en línea</span><span id="sub">$225</span></div>
+    <div class="row" id="mrow" style="display:none;border-top:0;margin-top:0;padding-top:6px"><span>Material</span><span id="msub">$0</span></div>
+    <div class="total"><span>Total</span><span class="n" id="tot">$225 MXN</span></div>
+    <div class="center"><a class="btn wa" id="waq" href="#">Quiero este plan</a></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="eyebrow">Horarios</div>
+  <h2>¿Cuándo nos vemos?</h2>
+  <table>
+    <tr><td>Lunes a viernes</td><td>5:00 pm – 9:00 pm</td></tr>
+    <tr><td>Sábados</td><td>6:30 pm – 9:00 pm</td></tr>
+  </table>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="eyebrow">Cómo funciona</div>
+  <h2>Empezar es muy fácil</h2>
+  <ol>
+    <li><b>1</b><h3 style="margin:0">Escríbeme</h3><p class="small" style="margin:4px 0 0">Mándame mensaje por WhatsApp.</p></li>
+    <li><b>2</b><h3 style="margin:0">Acordamos</h3><p class="small" style="margin:4px 0 0">Definimos horario y modalidad.</p></li>
+    <li><b>3</b><h3 style="margin:0">Pagas y comenzamos</h3><p class="small" style="margin:4px 0 0">Tú pones las ganas, yo te explico.</p></li>
+  </ol>
+  <p class="pay"><b>Pago por transferencia</b>, con comprobante por WhatsApp.</p>
+  <div class="center"><a class="btn wa" href="#">Escríbeme por WhatsApp</a></div>
+  <p class="aviso">Aviso: Asesorías independientes; no son un servicio oficial del IPN.</p>
+</div>
+</section>
+
+<script>
+// ▼ CAMBIA ESTE NÚMERO (lada de país + número, sin + ni espacios). Ej: México = 52 + 10 dígitos
+var WA_NUMBER = "525513549043";
+var PRICE = 150;
+function fmt(h){var m=Math.round(h*60),H=Math.floor(m/60),M=m%60;return (H?H+" h":"")+(H&&M?" ":"")+(M?M+" min":"")}
+var r=document.getElementById("rng");
+function upd(){
+  var h=parseFloat(r.value),c=Math.round(h*PRICE),f=fmt(h),m=0,names=[];Array.prototype.forEach.call(document.querySelectorAll(".mat:checked"),function(x){m+=parseInt(x.value,10);names.push(x.dataset.n)});var t=c+m;
+  document.getElementById("dur").textContent=f;
+  document.getElementById("lbl").textContent=f+" de clase en línea";
+  document.getElementById("sub").textContent="$"+c;document.getElementById("mrow").style.display=m?"flex":"none";document.getElementById("msub").textContent="$"+m;
+  document.getElementById("tot").textContent="$"+t+" MXN";
+  document.getElementById("waq").href=link("Hola, me interesa una asesoría de química de "+f+(names.length?" con material ("+names.join(", ")+")":"")+" ($"+t+" MXN). ¿Qué horarios tienes?");
+}
+function link(msg){return "https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(msg)}
+Array.prototype.forEach.call(document.querySelectorAll("a.wa"),function(a){a.target="_blank";a.rel="noopener";a.href=link("Hola, me interesa una asesoría de química.")});
+r.addEventListener("input",upd);Array.prototype.forEach.call(document.querySelectorAll(".mat"),function(x){x.addEventListener("change",upd)});upd();
+</script>
+</body>
+</html>
